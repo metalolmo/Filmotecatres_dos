@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opciones para el género -->
+    <string-array name="spinner_genero">
+        <item>Acción</item>
+        <item>Drama</item>
+        <item>Comedia</item>
+        <item>Terror</item>
+        <item>Sci-Fi</item>
+    </string-array>
+
+    <!-- Opciones para el formato -->
+    <string-array name="spinner_formato">
+        <item>DVD</item>
+        <item>Blu-ray</item>
+        <item>Digital</item>
+    </string-array>
+</resources>

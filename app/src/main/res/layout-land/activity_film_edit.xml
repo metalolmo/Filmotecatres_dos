@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FilmEditActivity">
+
+    <!-- Imagen del cartel -->
+    <ImageView
+        android:id="@+id/image_poster"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <!-- Botones para capturar o seleccionar imagen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_capturar_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capturar fotografía"/>
+
+        <Button
+            android:id="@+id/btn_seleccionar_imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Campos de texto para datos de la película -->
+    <EditText
+        android:id="@+id/edit_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título de la película"/>
+
+    <EditText
+        android:id="@+id/edit_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del director"/>
+
+    <EditText
+        android:id="@+id/edit_ano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edit_imdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enlace a IMDB"
+        android:inputType="textUri"/>
+
+    <!-- Spinner para Género -->
+    <Spinner
+        android:id="@+id/spinner_genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/prompt_genero"
+        android:entries="@array/spinner_genero"/>
+
+    <!-- Spinner para Formato -->
+    <Spinner
+        android:id="@+id/spinner_formato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/prompt_formato"
+        android:entries="@array/spinner_formato"/>
+
+    <!-- Área de texto para notas -->
+    <EditText
+        android:id="@+id/edit_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notas"
+        android:inputType="textMultiLine"
+        android:minLines="3"/>
+
+    <!-- Botones Guardar y Cancelar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Filmotecauno</string>
+    <string name="hello_world">Hola Mundo</string>
+
+    <string name="prompt_genero">Seleccionar género</string>
+    <string name="prompt_formato">Seleccionar formato</string>
+
+    <string name="menu_item_nueva_pelicula">Añadir película</string>
+    <string name="menu_item_acerca_de">Acerca de</string>
+    <string name="menu_item_borrar">Borrar</string> <!-- ✅ Añadido -->
+</resources>

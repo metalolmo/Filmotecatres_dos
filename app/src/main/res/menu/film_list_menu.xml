@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miNuevaPelicula"
+        android:title="@string/menu_item_nueva_pelicula" />
+    <item
+        android:id="@+id/miAcercaDe"
+        android:title="@string/menu_item_acerca_de" />
+</menu>
